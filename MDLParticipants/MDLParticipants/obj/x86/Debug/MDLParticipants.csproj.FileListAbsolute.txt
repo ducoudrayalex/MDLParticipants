@@ -1,0 +1,9 @@
+C:\Users\ducoudray.a\Documents\GitHub\MDLParticipants\MDLParticipants\MDLParticipants\bin\Debug\MDLParticipants.exe.config
+C:\Users\ducoudray.a\Documents\GitHub\MDLParticipants\MDLParticipants\MDLParticipants\bin\Debug\MDLParticipants.exe
+C:\Users\ducoudray.a\Documents\GitHub\MDLParticipants\MDLParticipants\MDLParticipants\bin\Debug\MDLParticipants.pdb
+C:\Users\ducoudray.a\Documents\GitHub\MDLParticipants\MDLParticipants\MDLParticipants\obj\x86\Debug\MDLParticipants.FrmLogin.resources
+C:\Users\ducoudray.a\Documents\GitHub\MDLParticipants\MDLParticipants\MDLParticipants\obj\x86\Debug\MDLParticipants.FrmPrincipale.resources
+C:\Users\ducoudray.a\Documents\GitHub\MDLParticipants\MDLParticipants\MDLParticipants\obj\x86\Debug\MDLParticipants.Properties.Resources.resources
+C:\Users\ducoudray.a\Documents\GitHub\MDLParticipants\MDLParticipants\MDLParticipants\obj\x86\Debug\MDLParticipants.csproj.GenerateResource.Cache
+C:\Users\ducoudray.a\Documents\GitHub\MDLParticipants\MDLParticipants\MDLParticipants\obj\x86\Debug\MDLParticipants.exe
+C:\Users\ducoudray.a\Documents\GitHub\MDLParticipants\MDLParticipants\MDLParticipants\obj\x86\Debug\MDLParticipants.pdb
