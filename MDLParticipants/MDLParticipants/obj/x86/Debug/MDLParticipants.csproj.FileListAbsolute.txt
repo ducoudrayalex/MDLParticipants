@@ -7,3 +7,4 @@ C:\Users\ducoudray.a\Documents\GitHub\MDLParticipants\MDLParticipants\MDLPartici
 C:\Users\ducoudray.a\Documents\GitHub\MDLParticipants\MDLParticipants\MDLParticipants\obj\x86\Debug\MDLParticipants.csproj.GenerateResource.Cache
 C:\Users\ducoudray.a\Documents\GitHub\MDLParticipants\MDLParticipants\MDLParticipants\obj\x86\Debug\MDLParticipants.exe
 C:\Users\ducoudray.a\Documents\GitHub\MDLParticipants\MDLParticipants\MDLParticipants\obj\x86\Debug\MDLParticipants.pdb
+C:\Users\ducoudray.a\Documents\GitHub\MDLParticipants\MDLParticipants\MDLParticipants\obj\x86\Debug\MDLParticipants.csprojResolveAssemblyReference.cache

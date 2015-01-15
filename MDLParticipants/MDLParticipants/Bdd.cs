@@ -21,6 +21,8 @@ namespace MDLParticipants
         private OracleDataAdapter UnOracleDataAdapter;
         private DataTable UneDataTable;
         private OracleDataReader UnReader;
+        private OracleTransaction UneOracleTransaction;
+        private Collection<Control> LesControls;
         //
         // méthodes
         //
@@ -88,23 +90,80 @@ namespace MDLParticipants
             UnReader.Close();
             return UneDataTable;
         }
-        public DataTable GetParticipants()
+        /// <summary>
+        /// permet de récupérer le contenu d'une table ou d'une vue. 
+        /// </summary>
+        /// <param name="UneTableOuVue"> nom de la table ou la vue dont on veut récupérer le contenu</param>
+        /// <returns>un objet de type datatable contenant les données récupérées</returns>
+        public DataTable ObtenirDonnesOracle(String UneTableOuVue)
         {
+            string Sql = "select * from " + UneTableOuVue;
+            this.UneOracleCommand = new OracleCommand(Sql, CnOracle);
+            UnOracleDataAdapter = new OracleDataAdapter();
+            UnOracleDataAdapter.SelectCommand = this.UneOracleCommand;
+            UneDataTable = new DataTable();
+            UnOracleDataAdapter.Fill(UneDataTable);
+            return UneDataTable;
+        }
+        /// <summary>
+        /// méthode permettant de remplir une combobox à partir d'une source de données
+        /// </summary>
+        /// <param name="UneConnexion">L'objet connexion à utiliser pour la connexion à la BD</param>
+        /// <param name="UneCombo"> La combobox que l'on doit remplir</param>
+        /// <param name="UneSource">Le nom de la source de données qui va fournir les données. Il s'agit en fait d'une vue de type
+        /// VXXXXOn ou XXXX représente le nom de la tabl à partir de laquelle la vue est créée. n représente un numéro de séquence</param>
+        public static void RemplirComboBox(Bdd UneConnexion, ComboBox UneCombo, String UneSource)
+        {
+
+            UneCombo.DataSource = UneConnexion.ObtenirDonnesOracle(UneSource);
+            UneCombo.DisplayMember = "libelle";
+            UneCombo.ValueMember = "id";
+        }
+
+        /// <summary>
+        /// méthode permettant de renvoyer un message d'erreur provenant de la bd
+        /// après l'avoir formatté. On ne renvoie que le message, sans code erreur
+        /// </summary>
+        /// <param name="unMessage">message à formater</param>
+        /// <returns>message formaté à afficher dans l'application</returns>
+        private String GetMessageOracle(String unMessage)
+        {
+            String[] message = Regex.Split(unMessage, "ORA-");
+            return (Regex.Split(message[1], ":"))[1];
+        }
+
+        public void AjoutDateHeureArriveeParticipant(Int16 pIdParticipant, DateTime pDateHeureArrivee)
+        {
+            String MessageErreur="";
             try
             {
-                String Req = "select * from  VPARTICIPANT01";
-                this.UneOracleCommand = new OracleCommand(Req, CnOracle);
-                //UnOracleDataAdapter = new OracleDataAdapter();
-                //UnOracleDataAdapter.SelectCommand = this.UneOracleCommand;
-                //UneDataTable = new DataTable();
-                //UnOracleDataAdapter.Fill(UneDataTable);
-                //return UneDataTable;
-                return this.ExecuteRequete(this.UneOracleCommand);
+                UneOracleCommand = new OracleCommand("mdl.pckparticipant.UPDATEARRIVEEPARTICIPANT", CnOracle);
+                UneOracleCommand.CommandType = CommandType.StoredProcedure;
+
+                UneOracleCommand.Parameters.Add("pIdParticipant", OracleDbType.Int16, ParameterDirection.Input).Value = pIdParticipant;
+                UneOracleCommand.Parameters.Add("pDateHeureArrivee", OracleDbType.Date, ParameterDirection.Input).Value = pDateHeureArrivee;
+                UneOracleTransaction = this.CnOracle.BeginTransaction();
+                UneOracleCommand.ExecuteNonQuery();
+                UneOracleTransaction.Commit();
             }
-            catch (OracleException)
+            catch (OracleException Oex)
             {
-                throw new Exception("Erreur de lecture des données");
+                MessageErreur = "Erreur Oracle \n" + this.GetMessageOracle(Oex.Message);
             }
-        }
-    }
+            catch (Exception ex)
+            {
+                MessageErreur = "Autre Erreur, " + ex.Message;
+            }
+            finally
+            {
+                if (MessageErreur.Length > 0)
+                {
+                    // annulation de la transaction
+                    UneOracleTransaction.Rollback();
+                    // Déclenchement de l'exception
+                    throw new Exception(MessageErreur);
+                }
+            }
+        }   
+  }
 }
