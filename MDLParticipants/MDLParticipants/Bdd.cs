@@ -132,7 +132,7 @@ namespace MDLParticipants
             return (Regex.Split(message[1], ":"))[1];
         }
 
-        public void AjoutDateHeureArriveeParticipant(Int16 pIdParticipant, DateTime pDateHeureArrivee)
+        public void AjoutDateHeureArriveeParticipant(Int16 pIdParticipant, DateTime pDateHeureArrivee,String pCleWifi)
         {
             String MessageErreur="";
             try
@@ -142,6 +142,7 @@ namespace MDLParticipants
 
                 UneOracleCommand.Parameters.Add("pIdParticipant", OracleDbType.Int16, ParameterDirection.Input).Value = pIdParticipant;
                 UneOracleCommand.Parameters.Add("pDateHeureArrivee", OracleDbType.Date, ParameterDirection.Input).Value = pDateHeureArrivee;
+                UneOracleCommand.Parameters.Add("pCleWifi", OracleDbType.Char, ParameterDirection.Input).Value = pCleWifi;
                 UneOracleTransaction = this.CnOracle.BeginTransaction();
                 UneOracleCommand.ExecuteNonQuery();
                 UneOracleTransaction.Commit();
