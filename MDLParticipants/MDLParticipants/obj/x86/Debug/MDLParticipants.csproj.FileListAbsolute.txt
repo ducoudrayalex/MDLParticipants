@@ -18,3 +18,4 @@ C:\Users\Romain\Documents\PPE MDL\MDLParticipants\MDLParticipants\MDLParticipant
 C:\Users\Romain\Documents\PPE MDL\MDLParticipants\MDLParticipants\MDLParticipants\obj\x86\Debug\MDLParticipants.FrmPrincipale.resources
 C:\Users\Romain\Documents\PPE MDL\MDLParticipants\MDLParticipants\MDLParticipants\obj\x86\Debug\MDLParticipants.Properties.Resources.resources
 C:\Users\Romain\Documents\PPE MDL\MDLParticipants\MDLParticipants\MDLParticipants\obj\x86\Debug\MDLParticipants.csproj.GenerateResource.Cache
+C:\Users\Romain\Documents\PPE MDL\MDLParticipants\MDLParticipants\MDLParticipants\bin\Debug\MessagingToolkit.QRCode.dll
