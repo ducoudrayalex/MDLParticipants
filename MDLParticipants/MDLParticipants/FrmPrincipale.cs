@@ -9,10 +9,18 @@ using System.Windows.Forms;
 using System.Globalization;
 using System.Threading.Tasks;
 
+using MessagingToolkit.QRCode.Codec;
+using MessagingToolkit.QRCode.Codec.Ecc;
+using MessagingToolkit.QRCode.Codec.Data;
+using MessagingToolkit.QRCode.Codec.Util;
+
 namespace MDLParticipants
 {
     public partial class FrmPrincipale : Form
     {
+
+        String idParticipant;
+
         public FrmPrincipale()
         {
             InitializeComponent();
@@ -24,6 +32,7 @@ namespace MDLParticipants
             {
                 UneConnexion = ((FrmLogin)Owner).UneConnexion;
                 Bdd.RemplirComboBox(UneConnexion,CmbParticipants,"VPARTICIPANT01");
+                this.idParticipant = this.CmbParticipants.SelectedValue.ToString();
             }
             catch (Exception ex)
             {
@@ -33,7 +42,7 @@ namespace MDLParticipants
 
         private void CmbParticipants_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            this.idParticipant = this.CmbParticipants.SelectedValue.ToString();
         }
         public DateTime GetDateFinVacation()
         {
@@ -58,6 +67,8 @@ namespace MDLParticipants
                 MessageBox.Show(cleWifi);
                 this.UneConnexion.AjoutDateHeureArriveeParticipant(Convert.ToInt16(this.CmbParticipants.SelectedValue), Convert.ToDateTime(dateString),cleWifi);
                 MessageBox.Show("Date d'arrivée du participant \"" + this.CmbParticipants.Text + "\"ajouté");
+
+                this.showImage(generateQrCode(this.idParticipant, 5));
                
             }
             catch (Exception ex)
@@ -135,6 +146,36 @@ namespace MDLParticipants
                 k++;
             }
             return tmp;
+        }
+
+        private Image generateQrCode(string input, int qrlevel)
+        {
+
+            string toenc = input;
+
+            MessagingToolkit.QRCode.Codec.QRCodeEncoder qe = new MessagingToolkit.QRCode.Codec.QRCodeEncoder();
+
+            qe.QRCodeEncodeMode = QRCodeEncoder.ENCODE_MODE.BYTE;
+
+            qe.QRCodeErrorCorrect = QRCodeEncoder.ERROR_CORRECTION.L; // - Using LOW for more storage
+
+            qe.QRCodeVersion = qrlevel;
+
+            System.Drawing.Bitmap bm = qe.Encode(toenc);
+
+            return bm;
+
+        }
+
+        public void showImage(Image image)
+        {
+            Form frm = new Form();
+            frm.Show();
+            PictureBox PictureBox2 = new PictureBox();
+            PictureBox2.Image = image;
+            PictureBox2.Show();
+            frm.Controls.Add(PictureBox2);
+            PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
         }
     }
 }

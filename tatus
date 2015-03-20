@@ -1,0 +1,59 @@
+[33mcommit efcc6bb24aa40747206fbac762aafe7e2189c580[m
+Author: TeriRomain <teri.romain@gmail.com>
+Date:   Thu Mar 19 21:09:46 2015 +0100
+
+    changes
+
+[33mcommit 9676ce44db18a0f557c8195983aa382a3bec9796[m
+Author: TeriRomain <teri.romain@gmail.com>
+Date:   Thu Mar 19 21:09:06 2015 +0100
+
+    desole je me suis trompé de branche...
+
+[33mcommit 2654d121e27069d601c7cb7bcea50c68c9c12317[m
+Author: ducoudrayalex <ducoudray.alex@gmail.com>
+Date:   Thu Mar 12 16:34:41 2015 +0100
+
+    commit
+
+[33mcommit bc312c49f4151faa361269578139a6f1e55cb0bd[m
+Author: TeriRomain <teri.romain@gmail.com>
+Date:   Mon Feb 9 19:48:22 2015 +0100
+
+    change
+
+[33mcommit dbac2b5d6f7c6838ffb68c993bab542478861817[m
+Author: ducoudrayalex <ducoudray.alex@gmail.com>
+Date:   Fri Jan 16 11:50:14 2015 +0100
+
+    Generation de la cle wifi
+
+[33mcommit 097ade5b1b6d077dba37888dc1037f00514e9f4a[m
+Author: ducoudrayalex <ducoudray.alex@gmail.com>
+Date:   Thu Jan 15 16:41:16 2015 +0100
+
+    blop
+
+[33mcommit 0ea0b68caee9a6020b904cc7ba224fadc975ca29[m
+Author: ducoudrayalex <ducoudray.alex@gmail.com>
+Date:   Thu Jan 15 16:11:24 2015 +0100
+
+    Insertion de la date et heure d'arrivée
+
+[33mcommit 3faa57dab11892aab8170cc987a895c26520f4f2[m
+Author: ducoudrayalex <ducoudray.alex@gmail.com>
+Date:   Thu Jan 15 13:21:42 2015 +0100
+
+    commit
+
+[33mcommit 694e76456093b51dbf1a8a7d212920af9965bcc9[m
+Author: ducoudrayalex <ducoudray.alex@gmail.com>
+Date:   Thu Jan 8 16:43:34 2015 +0100
+
+    premier commit
+
+[33mcommit fbd40b9a1e5e61b6bd45273a2692e3a1cda49570[m
+Author: ducoudrayalex <ducoudray.alex@gmail.com>
+Date:   Thu Jan 8 13:18:13 2015 +0100
+
+    :circus_tent: Added .gitattributes & .gitignore files
