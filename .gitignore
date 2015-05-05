@@ -45,3 +45,8 @@ Temporary Items
 *.cache
 MDLParticipants/MDLParticipants/obj/x86/Debug/DesignTimeResolveAssemblyReferences.cache
 MDLParticipants/MDLParticipants.suo
+MDLParticipants/MDLParticipants/obj/x86/Debug/MDLParticipants.pdb
+*.pdb
+MDLParticipants/MDLParticipants/obj/x86/Debug/MDLParticipants.csprojResolveAssemblyReference.cache
+MDLParticipants/MDLParticipants/obj/x86/Debug/DesignTimeResolveAssemblyReferences.cache
+MDLParticipants/MDLParticipants/obj/x86/Debug/MDLParticipants.csproj.FileListAbsolute.txt
