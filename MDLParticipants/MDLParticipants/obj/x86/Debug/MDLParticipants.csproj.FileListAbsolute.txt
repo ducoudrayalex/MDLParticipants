@@ -12,3 +12,6 @@ C:\Users\Romain\Documents\PPE MDL\MDLParticipants\MDLParticipants\MDLParticipant
 C:\Users\Romain\Documents\PPE MDL\MDLParticipants\MDLParticipants\MDLParticipants\obj\x86\Debug\MDLParticipants.exe
 C:\Users\Romain\Documents\PPE MDL\MDLParticipants\MDLParticipants\MDLParticipants\obj\x86\Debug\MDLParticipants.pdb
 C:\Users\ducoudray.a\Documents\GitHub\MDLParticipants\MDLParticipants\MDLParticipants\bin\Debug\MessagingToolkit.QRCode.dll
+D:\Mes documents\Projets\MDLParticipants\MDLParticipants\MDLParticipants\bin\Debug\MDLParticipants.exe.config
+D:\Mes documents\Projets\MDLParticipants\MDLParticipants\MDLParticipants\obj\x86\Debug\MDLParticipants.exe
+D:\Mes documents\Projets\MDLParticipants\MDLParticipants\MDLParticipants\obj\x86\Debug\MDLParticipants.pdb
