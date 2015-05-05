@@ -177,5 +177,10 @@ namespace MDLParticipants
             frm.Controls.Add(PictureBox2);
             PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
