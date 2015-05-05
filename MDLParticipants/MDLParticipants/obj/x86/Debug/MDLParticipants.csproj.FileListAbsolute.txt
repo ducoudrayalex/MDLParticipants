@@ -15,3 +15,11 @@ C:\Users\ducoudray.a\Documents\GitHub\MDLParticipants\MDLParticipants\MDLPartici
 D:\Mes documents\Projets\MDLParticipants\MDLParticipants\MDLParticipants\bin\Debug\MDLParticipants.exe.config
 D:\Mes documents\Projets\MDLParticipants\MDLParticipants\MDLParticipants\obj\x86\Debug\MDLParticipants.exe
 D:\Mes documents\Projets\MDLParticipants\MDLParticipants\MDLParticipants\obj\x86\Debug\MDLParticipants.pdb
+D:\Mes documents\Projets\MDLParticipants\MDLParticipants\MDLParticipants\obj\x86\Debug\MDLParticipants.csprojResolveAssemblyReference.cache
+D:\Mes documents\Projets\MDLParticipants\MDLParticipants\MDLParticipants\obj\x86\Debug\MDLParticipants.FrmLogin.resources
+D:\Mes documents\Projets\MDLParticipants\MDLParticipants\MDLParticipants\obj\x86\Debug\MDLParticipants.FrmPrincipale.resources
+D:\Mes documents\Projets\MDLParticipants\MDLParticipants\MDLParticipants\obj\x86\Debug\MDLParticipants.Properties.Resources.resources
+D:\Mes documents\Projets\MDLParticipants\MDLParticipants\MDLParticipants\obj\x86\Debug\MDLParticipants.csproj.GenerateResource.Cache
+D:\Mes documents\Projets\MDLParticipants\MDLParticipants\MDLParticipants\bin\Debug\MDLParticipants.exe
+D:\Mes documents\Projets\MDLParticipants\MDLParticipants\MDLParticipants\bin\Debug\MDLParticipants.pdb
+D:\Mes documents\Projets\MDLParticipants\MDLParticipants\MDLParticipants\bin\Debug\MessagingToolkit.QRCode.dll
