@@ -1,0 +1,90 @@
+\hypertarget{class_m_d_l_participants_1_1_bdd}{}\section{M\+D\+L\+Participants.\+Bdd Class Reference}
+\label{class_m_d_l_participants_1_1_bdd}\index{M\+D\+L\+Participants.\+Bdd@{M\+D\+L\+Participants.\+Bdd}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_m_d_l_participants_1_1_bdd_a0b1573b8583b8a36d8b9badd7d4fea75}{Bdd} (String Un\+Login, String Un\+Pwd)
+\begin{DoxyCompactList}\small\item\em constructeur de la connexion \end{DoxyCompactList}\item 
+Data\+Table \hyperlink{class_m_d_l_participants_1_1_bdd_abd7da8d1db22121522c19981fadb8a49}{Obtenir\+Donnes\+Oracle} (String Une\+Table\+Ou\+Vue)
+\begin{DoxyCompactList}\small\item\em permet de récupérer le contenu d\textquotesingle{}une table ou d\textquotesingle{}une vue. \end{DoxyCompactList}\item 
+\hypertarget{class_m_d_l_participants_1_1_bdd_a0f7bc6534737252b49e36318ba2005b2}{}void {\bfseries Ajout\+Date\+Heure\+Arrivee\+Participant} (Int16 p\+Id\+Participant, Date\+Time p\+Date\+Heure\+Arrivee, String p\+Cle\+Wifi)\label{class_m_d_l_participants_1_1_bdd_a0f7bc6534737252b49e36318ba2005b2}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_m_d_l_participants_1_1_bdd_a2b5d8e9ad5405fdf4522e1d2e82d13f1}{Remplir\+Combo\+Box} (\hyperlink{class_m_d_l_participants_1_1_bdd}{Bdd} Une\+Connexion, Combo\+Box Une\+Combo, String Une\+Source)
+\begin{DoxyCompactList}\small\item\em méthode permettant de remplir une combobox à partir d\textquotesingle{}une source de données \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_m_d_l_participants_1_1_bdd_a0b1573b8583b8a36d8b9badd7d4fea75}{}\index{M\+D\+L\+Participants\+::\+Bdd@{M\+D\+L\+Participants\+::\+Bdd}!Bdd@{Bdd}}
+\index{Bdd@{Bdd}!M\+D\+L\+Participants\+::\+Bdd@{M\+D\+L\+Participants\+::\+Bdd}}
+\subsubsection[{Bdd}]{\setlength{\rightskip}{0pt plus 5cm}M\+D\+L\+Participants.\+Bdd.\+Bdd (
+\begin{DoxyParamCaption}
+\item[{String}]{Un\+Login, }
+\item[{String}]{Un\+Pwd}
+\end{DoxyParamCaption}
+)}\label{class_m_d_l_participants_1_1_bdd_a0b1573b8583b8a36d8b9badd7d4fea75}
+
+
+constructeur de la connexion 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Un\+Login} & login utilisateur\\
+\hline
+{\em Un\+Pwd} & mot de passe utilisateur\\
+\hline
+\end{DoxyParams}
+on commence par récupérer dans Cn\+String les informations contenues dans le fichier app.\+config pour la connection\+String de nom Str\+Conn\+Mdl 
+
+on va remplacer dans la chaine de connexion les paramètres par le login et le pwd saisis dans les zones de texte. Pour ça on va utiliser la méthode Format de la classe String. /// 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_m_d_l_participants_1_1_bdd_abd7da8d1db22121522c19981fadb8a49}{}\index{M\+D\+L\+Participants\+::\+Bdd@{M\+D\+L\+Participants\+::\+Bdd}!Obtenir\+Donnes\+Oracle@{Obtenir\+Donnes\+Oracle}}
+\index{Obtenir\+Donnes\+Oracle@{Obtenir\+Donnes\+Oracle}!M\+D\+L\+Participants\+::\+Bdd@{M\+D\+L\+Participants\+::\+Bdd}}
+\subsubsection[{Obtenir\+Donnes\+Oracle}]{\setlength{\rightskip}{0pt plus 5cm}Data\+Table M\+D\+L\+Participants.\+Bdd.\+Obtenir\+Donnes\+Oracle (
+\begin{DoxyParamCaption}
+\item[{String}]{Une\+Table\+Ou\+Vue}
+\end{DoxyParamCaption}
+)}\label{class_m_d_l_participants_1_1_bdd_abd7da8d1db22121522c19981fadb8a49}
+
+
+permet de récupérer le contenu d\textquotesingle{}une table ou d\textquotesingle{}une vue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Une\+Table\+Ou\+Vue} & nom de la table ou la vue dont on veut récupérer le contenu\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un objet de type datatable contenant les données récupérées
+\end{DoxyReturn}
+\hypertarget{class_m_d_l_participants_1_1_bdd_a2b5d8e9ad5405fdf4522e1d2e82d13f1}{}\index{M\+D\+L\+Participants\+::\+Bdd@{M\+D\+L\+Participants\+::\+Bdd}!Remplir\+Combo\+Box@{Remplir\+Combo\+Box}}
+\index{Remplir\+Combo\+Box@{Remplir\+Combo\+Box}!M\+D\+L\+Participants\+::\+Bdd@{M\+D\+L\+Participants\+::\+Bdd}}
+\subsubsection[{Remplir\+Combo\+Box}]{\setlength{\rightskip}{0pt plus 5cm}static void M\+D\+L\+Participants.\+Bdd.\+Remplir\+Combo\+Box (
+\begin{DoxyParamCaption}
+\item[{{\bf Bdd}}]{Une\+Connexion, }
+\item[{Combo\+Box}]{Une\+Combo, }
+\item[{String}]{Une\+Source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_m_d_l_participants_1_1_bdd_a2b5d8e9ad5405fdf4522e1d2e82d13f1}
+
+
+méthode permettant de remplir une combobox à partir d\textquotesingle{}une source de données 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Une\+Connexion} & L\textquotesingle{}objet connexion à utiliser pour la connexion à la B\+D\\
+\hline
+{\em Une\+Combo} & La combobox que l\textquotesingle{}on doit remplir\\
+\hline
+{\em Une\+Source} & Le nom de la source de données qui va fournir les données. Il s\textquotesingle{}agit en fait d\textquotesingle{}une vue de type V\+X\+X\+X\+X\+On ou X\+X\+X\+X représente le nom de la tabl à partir de laquelle la vue est créée. n représente un numéro de séquence\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+M\+D\+L\+Participants/\+M\+D\+L\+Participants/Bdd.\+cs\end{DoxyCompactItemize}
